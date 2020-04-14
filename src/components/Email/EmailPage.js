@@ -1,5 +1,5 @@
 import React from "react";
-import EditEmailPopup from './CreateEmailPopup';
+import EditEmailPopup from './EditEmailPopup';
 import DeleteEmailPopup from './DeleteEmailPopup';
 import CreateEmailPopup from './CreateEmailPopup';
 import Header from "../Header";

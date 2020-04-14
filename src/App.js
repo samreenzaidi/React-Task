@@ -9,7 +9,7 @@ import './components/Interceptor';
 class App extends React.Component {
  render() {
   return(
-   <div class="container">
+   <div className="container">
     <BrowserRouter>
         <Router/>
     </BrowserRouter>,
