@@ -1,6 +1,5 @@
-const HtmlWebPackPlugin = require( 'html-webpack-plugin' );
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const path = require( 'path' );
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 const webpack = require('webpack');
 
 module.exports = {
@@ -17,7 +16,8 @@ module.exports = {
     },
     
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new MinifyPlugin()
     ],
 
     devServer: {
@@ -55,5 +55,5 @@ module.exports = {
         minimizer: [new UglifyJsPlugin({
         include: /\.min\.js$/
     })]
-    },
+    }
 };
