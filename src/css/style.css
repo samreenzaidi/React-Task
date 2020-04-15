@@ -30,6 +30,10 @@
     margin-right: 10px;
 }
 
+.employeepage-container{
+	position: relative
+}	
+
 .employeepage-container > .btn,
 .emailpage-container > .btn{
     margin: 30px 0;
